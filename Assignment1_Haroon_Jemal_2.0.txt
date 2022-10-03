@@ -1,0 +1,72 @@
+Name: Haroon Jemal
+ID: 100790378
+Date: 10/09/21
+########################################## Question #1
+a1 = 1
+b1 = 2
+sum1 = (a1**b1)
+
+a2 = 2
+b2 =3
+sum2 = (a2**b2)
+
+a3 = 3
+b3 = 4
+sum3 = (a3**b3)
+
+a4 = 4
+b4 = 5
+sum4 = (a4**b4)
+
+a5 = 5
+b5 = 6
+sum5 = (a5**b5)
+
+print("A", " ", "B", "", "a**b")
+print(a1,"","",b1,"","",sum1)
+print(a2,"","",b2,"","",sum2)
+print(a3,"","",b3,"","",sum3)
+print(a4,"","",b4,"","",sum4)
+print(a5,"","",b5,"","",sum5)
+########################################## Question #2
+answer = int(input("please enter an integer: "))
+a = (answer // 1000)
+b = (answer // 100) 
+c = b % 10
+d = (answer//10) 
+e = d % 10
+f = (answer % 10)
+print("The Sum of the integers is:", (a+c+e+f))
+########################################## Question #3
+minutes = float(input("Enter the number of minutes: "))
+year = minutes / 525600
+minutesleft = minutes % 525600
+day = minutesleft / 1440
+print(minutes, " is ", year, "and", day)
+########################################## Question #4
+weight = float(input("Enter the weight in pounds:"))
+height = float(input("Enter the height in pounds:"))
+BMI = round((weight * 0.45359237)/(height * height*0.0254*0.0254),2)
+print("BMI is",BMI)
+########################################## Question #5
+name = str(input("Enter a name:"))
+hoursworked =int(input("Enter Hours worked this week:"))
+payrate = float(input("Enter Hourly Pay Rate:"))
+federaltax = float(input("Enter Federal Tax WithHolding rates Rate:"))
+Statetax = float(input("Enter State tax withholding Rate:"))
+
+Grosspayrate = hoursworked * payrate
+FederalWithholding = Grosspayrate * federaltax
+StateWithholding  = Grosspayrate * Statetax
+TotalTaxes = StateWithholding + FederalWithholding
+NetPay = Grosspayrate - TotalTaxes
+
+print("Employee Name",name)
+print("Hours Worked",hoursworked)
+print("Pay Rate",payrate)
+print("Gross Pay",Grosspayrate)
+print("Deductions",FederalWithholding)
+print("State WithHolding",StateWithholding)
+print("Total Taxes",TotalTaxes)
+print("Net Pay",NetPay)
+#########################################################
